@@ -1,0 +1,26 @@
+
+package:
+  name: intermediate_python_project
+  version: {{ PKG_VERSION  }}
+
+source:
+  git: 
+  release: release/{{ PKG_VERSION  }}
+
+  
+build:
+    number: {{ PKG_BUILDNUM }}
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+	
+about:
+  home: https://anaconda.org/
+  license: Creative Commons Attribution 4.0 International License.
+  summary: 'smallest packagable python project'
+
